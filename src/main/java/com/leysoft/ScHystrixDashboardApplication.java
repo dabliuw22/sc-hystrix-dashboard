@@ -1,3 +1,4 @@
+
 package com.leysoft;
 
 import org.springframework.boot.SpringApplication;
@@ -9,7 +10,7 @@ import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboar
 @SpringBootApplication
 public class ScHystrixDashboardApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ScHystrixDashboardApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ScHystrixDashboardApplication.class, args);
+    }
 }
