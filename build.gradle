@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '2.0.3.RELEASE'
+		springBootVersion = '2.1.4.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -23,16 +23,13 @@ repositories {
 	mavenCentral()
 }
 
-
-ext {
-	springCloudVersion = 'Finchley.RELEASE'
-}
+ext['springCloudVersion'] = 'Greenwich.RELEASE'
 
 dependencies {
-	compile('org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard')
-	compile('org.springframework.cloud:spring-cloud-starter-netflix-turbine')
-	//compile('org.springframework.cloud:spring-cloud-starter-netflix-turbine-stream')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix-dashboard'
+	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-turbine'
+	//cimplementation 'org.springframework.cloud:spring-cloud-starter-netflix-turbine-stream'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 dependencyManagement {
